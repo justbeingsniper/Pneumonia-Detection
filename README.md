@@ -1,18 +1,17 @@
-````markdown
 # AI-Powered Pneumonia Detection from Chest X-Rays
 
-This project is a **Streamlit-based AI application** that detects pneumonia from chest X-ray images using a **DenseNet121 deep learning model**. It also provides **Grad-CAM visualizations** to highlight areas the model focuses on for prediction.
+A Streamlit-based AI application that detects pneumonia from chest X-ray images using a DenseNet121 deep learning model with Grad-CAM visualizations to interpret model predictions.
 
 ---
 
 ## Overview
 
-The AI model classifies chest X-rays as:
+This AI tool classifies chest X-rays into:
 
-- **PNEUMONIA**  
-- **NORMAL**
+- PNEUMONIA  
+- NORMAL
 
-Grad-CAM overlays highlight regions of interest on the X-ray, helping interpret model predictions.
+It also highlights regions that influenced the AI's decision using Grad-CAM, providing visual interpretability.
 
 ---
 
@@ -20,19 +19,19 @@ Grad-CAM overlays highlight regions of interest on the X-ray, helping interpret 
 
 - Upload or paste X-ray images (`.dcm`, `.jpg`, `.jpeg`, `.png`)  
 - Real-time predictions with confidence scores  
-- Grad-CAM heatmaps to visualize model focus  
-- Session-based multi-image analysis  
+- Grad-CAM heatmaps to visualize AI focus areas  
+- Multi-image session-based analysis  
 - Download the trained model for offline use  
 
 ---
 
 ## Installation
 
-Install required Python packages:
+Install dependencies:
 
 ```bash
 pip install streamlit tensorflow pydicom pillow opencv-python albumentations matplotlib streamlit-paste-button
-````
+
 
 Run the app:
 
